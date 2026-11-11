@@ -1,0 +1,116 @@
+<!-- Main HTML document with sidebar navigation, topbar, content area, overlay, and script include. - Extracted from YouTube tutorial by YouExtractor -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Sidebar Menu | Curve Outside</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar" aria-label="Main navigation">
+    <div class="logo">
+      <i class="bx bxl-codepen"></i>
+      <span class="logo-text">Dash<span>Board</span></span>
+    </div>
+
+    <ul class="nav-list">
+      <li class="nav-item active" aria-current="page">
+        <a href="#home">
+          <i class="bx bx-home-alt-2"></i>
+          <span class="nav-label">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#dashboard">
+          <i class="bx bx-grid-alt"></i>
+          <span class="nav-label">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#analytics">
+          <i class="bx bx-bar-chart-alt-2"></i>
+          <span class="nav-label">Analytics</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#messages">
+          <i class="bx bx-message-square-dots"></i>
+          <span class="nav-label">Messages</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#settings">
+          <i class="bx bx-cog"></i>
+          <span class="nav-label">Settings</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#logout">
+          <i class="bx bx-log-out"></i>
+          <span class="nav-label">Logout</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Sliding active indicator -->
+    <span class="active-indicator" aria-hidden="true"></span>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="topbar">
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation menu">
+        <i class="bx bx-menu"></i>
+      </button>
+      <h1 class="page-title">Dashboard</h1>
+    </header>
+
+    <section class="content">
+      <div class="cards">
+        <article class="card">
+          <i class="bx bx-user"></i>
+          <div>
+            <h2>1,204</h2>
+            <p>Total Users</p>
+          </div>
+        </article>
+        <article class="card">
+          <i class="bx bx-cart"></i>
+          <div>
+            <h2>842</h2>
+            <p>Orders</p>
+          </div>
+        </article>
+        <article class="card">
+          <i class="bx bx-dollar-circle"></i>
+          <div>
+            <h2>$12.4k</h2>
+            <p>Revenue</p>
+          </div>
+        </article>
+        <article class="card">
+          <i class="bx bx-line-chart"></i>
+          <div>
+            <h2>+18%</h2>
+            <p>Growth</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel">
+        <h2>Welcome back 👋</h2>
+        <p>This is a demo dashboard built with a curved-outside sidebar navigation menu using pure HTML, CSS and vanilla JavaScript. Click the menu button to collapse the sidebar, or select a different item to see the curved active indicator slide.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
